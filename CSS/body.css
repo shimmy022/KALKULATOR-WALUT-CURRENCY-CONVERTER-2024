@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  background-image: url(https://thumbs.dreamstime.com/b/poker-prints-us-dollar-american-money-isolated-white-cash-flying-hundred-dollars-background-194776268.jpg);
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: black;
+}

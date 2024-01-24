@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="CSS/body.css" rel="stylesheet" />
+    <link href="CSS/container.css" rel="stylesheet" />
+    <link href="CSS/form.css" rel="stylesheet" />
+    <link href="CSS/section.css" rel="stylesheet" />
+    <link href="CSS/button.css" rel="stylesheet" />
+
+    <script defer src="JS/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div class="container">
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">KALKULATOR WALUT</legend>
+          <p>
+            <label
+              ><span class="form__labelText">Wpisz kwotę*:</span>
+              <input
+                class="form__field js-amount"
+                required
+                min="1.00"
+                max="10000000"
+                type="number"
+                step="0.01"
+                name="amount"
+                placeholder="PLN"
+              />
+            </label>
+          </p>
+          <label
+            ><span class="form__labelText">Wybierz walutę*:</span>
+            <select
+              class="form__field form__field--select js-currency"
+              required
+              name="currency"
+            >
+              <option value="EUR">EURO</option>
+              <option selected value="USD">DOLAR</option>
+              <option value="GBP">FUNT BRYTYJSKI</option>
+              <option value="CHF">FRANK SZWAJCARSKI</option>
+              <option value="THB">BAT TAJLANDZKI</option>
+            </select>
+          </label>
+          <p>Wymagane pola są zaznaczone gwiazdką. *</p>
+        </fieldset>
+        <button class="form__button js-button">OBLICZ</button>
+        <p class="js-result"></p>
+      </form>
+    </div>
+  </body>
+</html>
