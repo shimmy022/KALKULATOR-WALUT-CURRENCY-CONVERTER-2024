@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="eng">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,10 +31,11 @@
     <div class="container">
       <form class="form js-form">
         <fieldset class="form__fieldset">
-          <legend class="form__legend">KALKULATOR WALUT</legend>
+          <legend class="form__legend">CURRENCY CONVERTER</legend>
           <p>
             <label
-              ><span class="form__labelText">Wpisz kwotę*:</span>
+              ><span class="form__labelText">
+                Enter the amount*:</span>
               <input
                 class="form__field js-amount"
                 required
@@ -48,22 +49,22 @@
             </label>
           </p>
           <label
-            ><span class="form__labelText">Wybierz walutę*:</span>
+            ><span class="form__labelText">Select currency*:</span>
             <select
               class="form__field form__field--select js-currency"
               required
               name="currency"
             >
-              <option value="EUR">EURO</option>
-              <option selected value="USD">DOLAR</option>
-              <option value="GBP">FUNT BRYTYJSKI</option>
-              <option value="CHF">FRANK SZWAJCARSKI</option>
-              <option value="THB">BAT TAJLANDZKI</option>
+              <option value="EUR">EUR - EURO</option>
+              <option selected value="USD">USD - DOLLAR</option>
+              <option value="GBP">GBP - BRITISH POUND</option>
+              <option value="CHF">CHF - SWISS FRANC</option>
+              <option value="THB">THB - THAI BATH</option>
             </select>
           </label>
-          <p>Wymagane pola są zaznaczone gwiazdką. *</p>
+          <p>Required fields are marked with "*".</p>
         </fieldset>
-        <button class="form__button js-button">OBLICZ</button>
+        <button class="form__button js-button">CALCULATE</button>
         <p class="js-result"></p>
       </form>
     </div>

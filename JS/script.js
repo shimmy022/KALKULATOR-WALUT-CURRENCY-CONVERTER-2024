@@ -5,7 +5,7 @@ let buttonElement = document.querySelector(".js-button");
 let resultElement = document.querySelector(".js-result");
 
 buttonElement.addEventListener("click", () => {
-  buttonElement.innerHTML = "OBLICZ PONOWNIE";
+  buttonElement.innerHTML = "CALCULATE AGAIN";
 });
 
 let rateEUR = 4.38;
@@ -40,11 +40,11 @@ formElement.addEventListener("submit", (event) => {
       break;
   }
 
-  resultElement.innerHTML = `<section class="section">Wynik: ${amount.toFixed(2)} PLN = ${result.toFixed(2)} ${currency}
-  <div class="section__paragraphsContainer"><p>KURSY WALUT NA DZIEŃ 24.01.2024 r.</p>
+  resultElement.innerHTML = `<section class="section">Result: ${amount.toFixed(2)} PLN = ${result.toFixed(2)} ${currency}
+  <div class="section__paragraphsContainer"><p>EXCHANGE RATES as of January 24 2024 r.</p>
   <p>EURO = 4.38</p>
-  <p>DOLAR = 4.01</p>
-  <p>FUNT BRYTYJSKI = 5.11</p>
-  <p>FRANK SZWAJCARSKI = 4.65</p>
-  <p>BAT TAJLANDZKI = 0.11</p></div></section>`;
+  <p>DOLLAR = 4.01</p>
+  <p>BRITISH POUND = 5.11</p>
+  <p>SWISS FRANC = 4.65</p>
+  <p>THAI BATH = 0.11</p></div></section>`;
 });
