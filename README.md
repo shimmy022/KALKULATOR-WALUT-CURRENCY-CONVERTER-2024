@@ -5,4 +5,4 @@ If you want to convert your currency, you've come to the right place, the link a
 To made it I used my new skills: 
 *Technology BEM* from **HTLM**, *styles from* **CSS** and *function* from **JS**. 
 
-![currency converter ss](https://ibb.co/hZyMcjz)
+![currency converter ss](https://i.ibb.co/CMzt6ZG/Zrzut-ekranu-2024-02-12-200450.png)
